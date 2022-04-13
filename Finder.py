@@ -3,9 +3,10 @@ import time
 primes = [2]
 num = 3
 
-q = time.time()
+
 amountofprimes = int(input("Amount of primes you want to find: "))
 
+q = time.time()
 while len(primes) < amountofprimes:
     print("Found: ", len(primes), "primes")
     for i in primes:
