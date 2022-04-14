@@ -25,4 +25,3 @@ while len(twins) < amountofprimes:
 
 print(twins)
 print(f"Finished in: ", time.time() - q)
-input()
