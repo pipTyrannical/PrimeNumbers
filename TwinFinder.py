@@ -1,5 +1,6 @@
 import time
 
+primes = [2]
 twins = []
 lastprime = 2
 num = 3
@@ -8,8 +9,8 @@ num = 3
 amountofprimes = int(input("Amount of twin primes you want to find: "))
 
 q = time.time()
-while len(primes) < amountofprimes:
-    print("Found: ", len(primes), "primes")
+while len(twins) < amountofprimes:
+    print("Found:", len(twins), "twin primes")
     for i in primes:
         if not num / i % 1:
             break
