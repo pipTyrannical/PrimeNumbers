@@ -16,6 +16,7 @@ while len(twins) < amountofprimes:
             break
 
     else:
+        primes.append(num)
         if num == lastprime + 2:
             twins.append([lastprime, num])
 
@@ -24,3 +25,4 @@ while len(twins) < amountofprimes:
 
 print(twins)
 print(f"Finished in: ", time.time() - q)
+input()
