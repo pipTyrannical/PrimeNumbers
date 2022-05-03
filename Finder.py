@@ -6,7 +6,7 @@ num = 3
 
 amountofprimes = int(input("Amount of primes you want to find: "))
 
-q = time.time()
+q = time.perf_counter()
 while len(primes) < amountofprimes:
     print("Found: ", len(primes), "primes")
     for i in primes:
@@ -18,4 +18,4 @@ while len(primes) < amountofprimes:
     num += 2
 
 print(primes)
-print(f"Finished in: ", time.time() - q)
+print(f"Finished in: ", time.perf_counter() - q)
