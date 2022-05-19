@@ -12,7 +12,7 @@ if not preformance:
     while len(primes) < amountofprimes:
         print("Found: ", len(primes), "primes")
         for i in primes:
-            if not num / i % 1:
+            if not num % i:
                 break
 
         else:
@@ -24,7 +24,7 @@ else:
     print('Preformance mode on. This wont show any messages.')
     while len(primes) < amountofprimes:
         for i in primes:
-            if not num / i % 1:
+            if not num % i:
                 break
 
         else:
